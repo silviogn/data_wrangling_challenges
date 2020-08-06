@@ -1,0 +1,83 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "resource1",
+      "path": "gas_natural_spot_price_data_daily.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "default",
+            "title": "Date",
+            "description": "Day of the price"
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "format": "default",
+            "title": "Price",
+            "description": "Value of the price"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resource2",
+      "path": "gas_natural_spot_price_data_daily_by_month.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "default",
+            "title": "Date",
+            "description": "Month information"
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "format": "default",
+            "title": "Price",
+            "description": "Mean of the price by month"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resource3",
+      "path": "gas_natural_spot_price_data_daily_by_year.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "format": "default",
+            "title": "Date",
+            "description": "Year information"
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "format": "default",
+            "title": "Price",
+            "description": "Mean of the price by year"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "GasNaturalSpotPrice",
+  "title": "Gas Natural Spot Price",
+  "description": "Raw data about daily gas natural spot price",
+  "contributors": [
+    {
+      "title": "Silvio Normey Gómez",
+      "role": "author"
+    }
+  ]
+}
